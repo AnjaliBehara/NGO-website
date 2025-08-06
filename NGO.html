@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NGO Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      scroll-behavior: smooth;
+    }
+    .hero {
+      background-color: #f5f5f5;
+      padding: 60px 0;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    .section-padding {
+      padding: 60px 0;
+    }
+    footer {
+      background: #222;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Helping Hands NGO</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#volunteer">Volunteer</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h1>Welcome to Helping Hands</h1>
+      <img src="ngo.png">
+      <p>We aim to create a better future for everyone.</p>
+      <a href="#volunteer" class="btn btn-primary mt-3">Become a Volunteer</a>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="section-padding bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">About Us</h2>
+      <p class="text-center">Helping Hands is a non-profit organization working to improve the lives of underprivileged communities. We believe in empowering people through education, healthcare, and social support. Join us in making a difference.</p>
+    </div>
+  </section>
+
+  <!-- Volunteer Form -->
+  <section id="volunteer" class="section-padding">
+    <div class="container">
+      <h2 class="text-center mb-4">Volunteer With Us</h2>
+      <form class="row g-3" action="#" method="post">
+        <div class="col-md-6">
+          <label for="name" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="name" required />
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label">Email Address</label>
+          <input type="email" class="form-control" id="email" required />
+        </div>
+        <div class="col-12">
+          <label for="message" class="form-label">Why do you want to volunteer?</label>
+          <textarea class="form-control" id="message" rows="4" required></textarea>
+        </div>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-success mt-3">Submit</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Helping Hands NGO. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
